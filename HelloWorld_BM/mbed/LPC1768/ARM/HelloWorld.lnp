@@ -1,0 +1,9 @@
+--cpu Cortex-M3
+".\mbed\lpc1768\arm\main.o"
+".\mbed\lpc1768\arm\startup_lpc17xx.o"
+".\mbed\lpc1768\arm\system_lpc17xx.o"
+".\mbed\lpc1768\arm\sys.o"
+--strict --scatter "mbed/LPC1768/ARM/LPC1768.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\build\HelloWorld.map" -o .\mbed\LPC1768\ARM\HelloWorld.axf
