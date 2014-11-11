@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\mbed\LPC1768\ARM\HelloWorld.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\mbed\LPC1768\ARM\HelloWorld.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050041: Last Updated: Sat Nov 01 13:38:13 2014
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050041: Last Updated: Mon Nov 10 23:31:11 2014
 <BR><P>
 <H3>Maximum Stack Usage =         40 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -202,16 +202,6 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
 </UL>
 
-<P><STRONG><a name="[41]"></a>approx_delay()</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, main.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[3b]"></a>main</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, main.o(.text))
-<BR><BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;approx_delay()
-</UL>
-<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
-</UL>
-
 <P><STRONG><a name="[4]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
 </UL>
@@ -381,6 +371,16 @@ Global Symbols
 <P><STRONG><a name="[e]"></a>WDT_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
 </UL>
+<P><STRONG><a name="[41]"></a>approx_delay</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, main.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[3b]"></a>main</STRONG> (Thumb, 98 bytes, Stack size 0 bytes, main.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;approx_delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
+</UL>
+
 <P><STRONG><a name="[37]"></a>__user_setup_stackheap</STRONG> (Thumb, 36 bytes, Stack size 40 bytes, sys.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = __user_setup_stackheap
 </UL>

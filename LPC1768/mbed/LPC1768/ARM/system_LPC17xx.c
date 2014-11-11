@@ -574,11 +574,3 @@ void SystemInit (void)
   LPC_SC->FLASHCFG  = (LPC_SC->FLASHCFG & ~0x0000F000) | FLASHCFG_Val;
 #endif
 }
-
-/**
- * @}
- */
-
-/**
- * @}
- */
